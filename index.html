@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Design</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <div id="realestate-preloader">
+  <div class="loader-box">
+    
+    <!-- BUILDING ICON -->
+    <div class="building">
+      <div class="floor"></div>
+      <div class="floor"></div>
+      <div class="floor"></div>
+    </div>
+
+    <!-- TEXT -->
+    <h4>Loading Properties...</h4>
+
+    <!-- LOADING BAR -->
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+
+    <!-- LEFT: CONTACT INFO -->
+    <div class="top-left d-flex align-items-center flex-wrap">
+      <span><i class="bi bi-geo-alt"></i> 123 Street, Chennai</span>
+      <span><i class="bi bi-telephone"></i> +91 98765 43210</span>
+      <span><i class="bi bi-envelope"></i> info@example.com</span>
+    </div>
+
+    <!-- RIGHT: SOCIAL ICONS -->
+    <div class="top-right d-flex align-items-center">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar custom-navbar">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <!-- LEFT -->
+    <div class="d-flex align-items-center">
+      <button class="menu-toggle me-2 d-lg-none" onclick="openSidebar()">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <div class="logo d-flex align-items-center gap-2">
+        <i class="bi bi-buildings"></i>
+        <strong>Realestate</strong>
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <ul class="nav-center d-none d-lg-flex">
+        <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- RIGHT -->
+    <div class="right-section d-flex align-items-center">
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons d-none d-md-flex">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <a href="#services" class="other-link d-none d-md-block">Other services</a>
+
+      <a href="#contact" class="btn btn contact-btn">Contact us</a>
+    </div>
+
+  </div>
+</nav>
+
+<!-- SIDEBAR (MOBILE) -->
+<div id="sidebar" class="sidebar">
+  <button class="close-btn" onclick="closeSidebar()">×</button>
+
+  <a href="index.html">Home</a>
+  <a href="#about">About us</a>
+  <a href="#projects">Projects</a>
+  <a href="#services">Services</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <div class="hero-content">
+         <h1 id="typing-text"></h1>
+          <p>
+            Discover premium properties with trusted agents. 
+            Explore modern living spaces <br> tailored to your lifestyle.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-op">Get Started</a>
+            <a href="#" class="btn btn-in">View Projects</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="steps-section">
+  <div class="container text-center">
+
+    <p class="small-texts">Three steps. Three minutes.</p>
+    <h2 class="main-title">Everything should be this easy.</h2>
+
+    <div class="row mt-5">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up">
+        <div class="hover-card">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2" alt="">
+          
+          <div class="overlay">
+            <div class="content">
+              <i class="bi bi-chat-dots"></i>
+              <h5>Tell us your needs</h5>
+              <p>Share your property preferences, budget, and location.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-4 col-md-6 mb-4" data-aos="flip-up">
+        <div class="hover-card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="">
+          
+          <div class="overlay">
+            <div class="content">
+              <i class="bi bi-house-door"></i>
+              <h5>Browse properties</h5>
+              <p>Explore curated real estate listings easily.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-4 col-md-6 mx-auto mb-4" data-aos="flip-up">
+        <div class="hover-card">
+          <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471" alt="">
+          
+          <div class="overlay">
+            <div class="content">
+              <i class="bi bi-pencil-square"></i>
+              <h5>Book & move in</h5>
+              <p>Finalize your property and move in stress-free.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="realestate-marquee-section" class="realestate-marquee-section mt-5" data-aos="zoom-in">
+  <div class="marquee-wrapper">
+
+    <div class="marquee-track">
+      <!-- REPEAT CONTENT -->
+      <span>Luxury Villas</span>
+      <span>Premium Apartments</span>
+      <span>Smart Homes</span>
+      <span>Commercial Spaces</span>
+      <span>Beachfront Properties</span>
+      <span>Investment Opportunities</span>
+
+      <!-- DUPLICATE for seamless loop -->
+      <span>Luxury Villas</span>
+      <span>Premium Apartments</span>
+      <span>Smart Homes</span>
+      <span>Commercial Spaces</span>
+      <span>Beachfront Properties</span>
+      <span>Investment Opportunities</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="about-section" id="about" data-aos="zoom-out">
+  <div class="container">
+
+    <!-- TOP TITLE -->
+    <div class="text-center mb-5">
+      <h2 class="main-title">
+        We are a global, <span style="color: black;"> boutique real estate brokerage</span>
+      </h2>
+    </div>
+
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <h3 class="sub-titles">The transfer of real estate</h3>
+
+        <p class="descs">
+          Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. 
+          Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus 
+          scelerisque vehicula ante nunc. Tellus consequat nisl quis nisi justo.Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. 
+          Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus 
+          scelerisque vehicula ante nunc. Tellus consequat nisl quis nisi justo.Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. 
+          Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus 
+          scelerisque vehicula ante nunc. Tellus consequat nisl quis nisi justo.
+        </p>
+
+        <!-- BUTTONS -->
+        <div class="btn-group-custom">
+          <a href="#contact" class="btn btn-op" style="padding-left: 20px;padding-right: 20px;padding-top: 10px;padding-bottom: 10px;color: white;border-radius: 10px;">Book Now!</a>
+          <a href="#properties" class="btn btn-in"  style="padding-left: 20px;padding-right: 20px;padding-top: 10px;padding-bottom: 10px;border-radius: 10px;">Read More</a>
+        </div>
+
+        <!-- COUNTERS -->
+        <div class="row counter-section mt-4">
+          <div class="col-4">
+            <h2 class="counter" data-target="12">0</h2>
+            <p>Customers</p>
+          </div>
+          <div class="col-4">
+            <h2 class="counter" data-target="14">0</h2>
+            <p>Offices</p>
+          </div>
+          <div class="col-4">
+            <h2 class="counter" data-target="10">0</h2>
+            <p>Students</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <div class="image-box">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="project-section" id="properties" data-aos="fade-down">
+  <div class="container">
+
+    <!-- TOP -->
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+      <div>
+        <p class="small-texts">Best Project of the Years</p>
+        <h2 class="main-title">Our recent projects</h2>
+      </div>
+
+      <!-- NAV BUTTONS -->
+      <div class="slider-nav">
+        <button class="prev"><i class="bi bi-chevron-left"></i></button>
+        <button class="next"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="swiper projectSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- CARD -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+            <div class="card-body">
+              <h5>Sobha Heartland II Villas</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span>4.83</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Repeat -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+            <div class="card-body">
+              <h5>Sobha Heartland II Villas</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span>4.83</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+            <div class="card-body">
+              <h5>Sobha Heartland II Villas</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span>4.83</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+            <div class="card-body">
+              <h5>Sobha Heartland II Villas</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span>4.83</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+            <div class="card-body">
+              <h5>Sobha Heartland II Villas</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span>4.83</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+            <div class="card-body">
+              <h5>Sobha Heartland II Villas</h5>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+                <span>4.83</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="eco-section" data-aos="zoom-out">
+  <div class="container">
+
+    <!-- ROW 1 -->
+    <div class="row align-items-center mb-5">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <p class="tag">WHO WE ARE</p>
+        <h2 class="title">
+          Discover Sustainable Luxury Living with EcoHaven Realty.
+        </h2>
+
+        <p class="desc">
+          EcoHaven Realty is a real estate agency specialising in eco-friendly homes and sustainable living. 
+          We offer a range of eco-friendly properties, including energy-efficient homes, homes built with 
+          eco-friendly materials, and homes equipped with sustainable technologies such as solar panels.
+        </p>
+
+        <a href="#contact" class="btn eco-btn">Our Company →</a>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276" class="eco-img">
+      </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="row align-items-center flex-lg-row-reverse" data-aos="zoom-in">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <p class="tag">OUR MISSION</p>
+        <h2 class="title">
+          Building a Better Future with Eco-Friendly Homes.
+        </h2>
+
+        <p class="desc">
+          The agency's mission is to provide clients with a selection of properties that meet high 
+          environmental standards, while also providing a comfortable and luxurious lifestyle.
+        </p>
+
+        <a href="#contact" class="btn eco-btn">Learn More →</a>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="eco-img">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="services-section" id="services">
+  <div class="container text-center">
+
+    <!-- TOP TITLE -->
+    <h6 class="sub-title">OUR SERVICES</h6>
+    <h2 class="main-title">
+      Premium Real Estate Services
+    </h2>
+
+    <div class="row mt-5">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa" alt="">
+          <div class="card-body">
+            <h5>Property Buying</h5>
+            <p>
+              Find your dream home with expert guidance and curated property listings.
+            </p>
+            <a href="#contact">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="">
+          <div class="card-body">
+            <h5>Property Selling</h5>
+            <p>
+              Sell your property faster with our trusted marketing strategies.
+            </p>
+            <a href="#contact">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae" alt="">
+          <div class="card-body">
+            <h5>Property Management</h5>
+            <p>
+              Hassle-free property management services for owners and investors.
+            </p>
+            <a href="#contact">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" alt="">
+          <div class="card-body">
+            <h5>Investment Advisory</h5>
+            <p>
+              Get expert advice to maximize returns on your real estate investments.
+            </p>
+            <a href="#contact">Learn More →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="realestate-google-reviews" class="realestate-google-reviews">
+  <div class="container text-center">
+
+    <h2 class="review-title">Client Reviews</h2>
+
+    <div class="row mt-5">
+
+      <!-- CARD -->
+      <!-- Repeat 8 cards -->
+      <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+        <div class="review-card">
+          <div class="review-top">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+            <div>
+              <h6>Arun Kumar</h6>
+              <div class="stars">
+                ★★★★★
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Amazing experience buying my dream home. Professional team and smooth process!
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+        <div class="review-card">
+          <div class="review-top">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+            <div>
+              <h6>Priya Sharma</h6>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <p>
+            Excellent service and support. Highly recommend for property investments.
+          </p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+<div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+  <div class="review-card">
+    <div class="review-top">
+      <img src="https://randomuser.me/api/portraits/men/45.jpg">
+      <div>
+        <h6>Rahul Verma</h6>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      Smooth and hassle-free property selling experience. Great support from start to finish.
+    </p>
+  </div>
+</div>
+
+<!-- CARD 4 -->
+<div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+  <div class="review-card">
+    <div class="review-top">
+      <img src="https://randomuser.me/api/portraits/women/65.jpg">
+      <div>
+        <h6>Sneha Iyer</h6>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      Found the perfect apartment quickly. Their team really understands client needs.
+    </p>
+  </div>
+</div>
+
+<!-- CARD 5 -->
+<div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+  <div class="review-card">
+    <div class="review-top">
+      <img src="https://randomuser.me/api/portraits/men/22.jpg">
+      <div>
+        <h6>Vikram Singh</h6>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      Professional and reliable real estate service. Highly recommended for investors.
+    </p>
+  </div>
+</div>
+
+<!-- CARD 6 -->
+<div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+  <div class="review-card">
+    <div class="review-top">
+      <img src="https://randomuser.me/api/portraits/women/30.jpg">
+      <div>
+        <h6>Anjali Mehta</h6>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      Excellent guidance throughout the buying process. Truly a stress-free experience.
+    </p>
+  </div>
+</div>
+
+<!-- CARD 7 -->
+<div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+  <div class="review-card">
+    <div class="review-top">
+      <img src="https://randomuser.me/api/portraits/men/18.jpg">
+      <div>
+        <h6>Karthik Raj</h6>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      Transparent and trustworthy service. Helped me find a great investment property.
+    </p>
+  </div>
+</div>
+
+<!-- CARD 8 -->
+<div class="col-lg-3 col-md-6 mb-4" data-aos="flip-right">
+  <div class="review-card">
+    <div class="review-top">
+      <img src="https://randomuser.me/api/portraits/women/12.jpg">
+      <div>
+        <h6>Divya Nair</h6>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <p>
+      Amazing customer service and quick responses. Highly satisfied with their work.
+    </p>
+  </div>
+</div>
+      <!-- ADD 6 MORE SAME -->
+      <!-- (just duplicate and change names/images/text) -->
+
+    </div>
+  </div>
+</section>
+
+<section id="realestate-gallery-section" class="realestate-gallery-section" id="gallery">
+  <div class="container">
+
+    <!-- TITLE -->
+    <div class="text-center mb-5">
+      <h2 class="gallery-title">Our Property Gallery</h2>
+      <p class="gallery-sub">Explore our premium real estate listings</p>
+    </div>
+
+    <!-- GALLERY GRID -->
+    <div class="row g-4">
+
+      <!-- IMAGE ITEM -->
+      <!-- Repeat 12 -->
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1599423300746-b62533397364">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1600047509782-20d39509f26d">
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-12" data-aos="flip-up">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-section py-5" data-aos="fade-down" id="contact" >
+  <div class="container">
+    <div class="contact-wrapper">
+
+      <div class="row g-0 align-items-center">
+
+        <!-- Form Area -->
+        <div class="col-lg-6 p-5 form-area">
+
+          <h3 class="contact-title text-center mb-4">GET IN TOUCH</h3>
+
+        <form id="contactForm">
+
+            <div class="mb-4">
+                <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                class="form-control contact-input"
+                placeholder="Your Name*"
+                required
+                >
+            </div>
+
+            <div class="mb-4">
+                <input
+                type="text"
+                id="phone"
+                name="phone"
+                class="form-control contact-input"
+                placeholder="Phone Number*"
+                required
+                >
+            </div>
+
+            <div class="mb-4">
+                <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control contact-input"
+                placeholder="Email*"
+                required
+                >
+            </div>
+
+            <div class="mb-4">
+                <select
+                id="propertyType"
+                name="propertyType"
+                class="form-control contact-input"
+                required
+                >
+                <option value="">Property Type</option>
+                <option value="Apartments">Apartments</option>
+                <option value="Villas">Villas</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <textarea
+                id="message"
+                name="message"
+                rows="4"
+                class="form-control contact-input"
+                placeholder="Message"
+                required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn submit-btn w-100" style="background-color:black ;color: white;padding: 8px;">
+                SUBMIT
+            </button>
+
+        </form>
+
+
+        </div>
+
+        <!-- Image -->
+        <div class="col-lg-6">
+          <img  loading="lazy" src="images/Rectangle 19.png" class="img-fluid contact-img" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="realestate-footer-banner" class="realestate-footer-banner">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+        <div class="footer-banner-content">
+          <h2>Ready to Find Your Dream Property?</h2>
+          <p>
+            Connect with our expert real estate team today and discover premium homes 
+            tailored to your lifestyle and investment goals.
+          </p>
+
+          <a href="#contact" class="btn footer-btn">Get In Touch</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer id="realestate-footer" class="realestate-footer">
+  <div class="container">
+
+    <div class="row">
+
+      <!-- ABOUT -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="footer-title">Realestate</h5>
+        <p class="footer-text">
+          We provide premium real estate solutions with eco-friendly and luxury living spaces tailored to your lifestyle.
+        </p>
+
+        <div class="footer-social">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h5 class="footer-title">Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- SERVICES -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="footer-title">Services</h5>
+        <ul class="footer-links">
+          <li><a href="#properties">Property Buying</a></li>
+          <li><a href="#properties">Property Selling</a></li>
+          <li><a href="#properties">Property Management</a></li>
+          <li><a href="#properties">Investment Planning</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h5 class="footer-title">Contact</h5>
+
+        <p class="footer-contact">
+          <i class="bi bi-geo-alt"></i> Chennai, India
+        </p>
+        <p class="footer-contact">
+          <i class="bi bi-telephone"></i> +91 98765 43210
+        </p>
+        <p class="footer-contact">
+          <i class="bi bi-envelope"></i> info@ecohaven.com
+        </p>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom text-center">
+      <p>© 2026 EcoHaven Realty. All Rights Reserved. Designed By</p><a href="https://www.techmayon.com/" style="color: white;text-decoration: none;">Tech Mayon</a>
+    </div>
+
+  </div>
+</footer>
+<button id="scrollTopBtn"><i class="fa fa-arrow-up"></i></button>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/919876543210?text=Hello%20I%20would%20like%20to%20enquire%20about%20properties"
+   class="whatsapp-btn"
+   target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+var swiper = new Swiper(".projectSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+
+  navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
+  },
+
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
+});
+</script>
+
+<script src="script.js"></script>
+<script>
+const counters = document.querySelectorAll('.counter');
+
+counters.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+
+    const increment = target / 100;
+
+    if (count < target) {
+      counter.innerText = Math.ceil(count + increment);
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target + "+";
+    }
+  };
+
+  updateCount();
+});
+</script>
+<script>
+var swiper = new Swiper(".realestateTestimonialSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+
+  pagination: {
+    el: ".realestate-testimonial-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }
+});
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
