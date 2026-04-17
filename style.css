@@ -138,6 +138,47 @@ body {
 .right-section {
   gap: 20px;
 }
+@media (min-width:1200px) and (max-width:1400px) {
+
+  .custom-navbar {
+    margin: 10px 15px;
+    padding: 10px 15px;
+  }
+
+  /* Reduce spacing */
+  .nav-center {
+    gap: 18px;
+  }
+
+  .nav-center li a {
+    font-size: 14px;
+  }
+
+  /* Right section tighter */
+  .right-section {
+    gap: 10px;
+  }
+
+  .search-box {
+    padding: 4px 8px;
+  }
+
+  .search-box input {
+    width: 120px;
+    font-size: 13px;
+  }
+
+  /* Button size adjust */
+  .contact-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  /* Logo smaller */
+  .logo {
+    font-size: 16px;
+  }
+}
 .hero-section {
   position: relative;
   padding: 250px 0;
